@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+# README
+## Writing a Readme
+Write the steps needed to run this application. Leave yourself some notes or key learning moments while building this application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- The Plan -->
+This application will have several views, and just like in Honey Rae Repairs, you will begin to build these views piece by piece. Before you get started, however, having an end product in mind will help with your decision making process as you build. What components will you build? What will your routes be? What components can you reuse? Some guidance will be given for these decisions and others will be left up to you.
 
-## Available Scripts
+Below is a list of user stories describing every feature you will implement in this project. Carefully read the user stories for each view of this application, then, build a wireframe representing each view and its features. Of course, feel free to review your wireframe with an instructor when you are finished.
 
-In the project directory, you can run:
+Revisit the Honey Rae's Wireframe chapter for guidance on building this wireframe.
 
-### `npm start`
+The Nav Bar
+A navbar will persist in each view, allowing the user to navigate through the views of the application. The links on the navbar are as follows:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+All Posts > links to the view of all the posts
+My Posts > links to the view of the logged in user's posts
+Favorites > links to the view of the logged in user's liked posts
+New Post > links to the view of the new post form
+Profile > links to the view of the logged in user's profile
+Logout > will logout the user
+🖥 New Post
+A form for the user to create a new post with a title, body, and topic.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Given the user wishes to create a new post
+When the user clicks on New Post in the Nav Bar
+Then a form to create a new post will display
 
-### `npm test`
+Given the user wishes to select a topic for the post
+When the user clicks on the topic dropdown
+Then a list of the topics should appear
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Given the user has entered a title for the post
+And the user has entered the body for the post
+And the user has selected a topic for the post
+When the user clicks the save button
+Then the post will save to the database and the application will navigate to the My Posts view
 
-### `npm run build`
+🖥 Home/All Posts
+A view for all the posts.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Given the user wishes to view a list of all the posts
+When the user is at the home route or visits the All Posts view
+Then the title, topic and number of likes will display for each post in the database.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Given the user wishes to filter the posts by topic
+When the user clicks on the topic dropdown
+And chooses a topic
+Then only the posts about the selected topic will display
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Given the user wishes to search for a post
+When the user enters a search term in the search input field
+Then only the posts with a title that contains the search term will display
 
-### `npm run eject`
+Given the user wishes to view a post
+When the user clicks on the title of a post
+Then the application will navigate to the Post Details view for the post
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🖥 Post Details
+A view for the user to read a post
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Given the user wishes to read a post
+When the user has clicked to view a specific post
+Then the title, author, topic, date, body, and number of likes should display for the post.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Given the user wishes to view the profile of the author
+When the user clicks the author's name
+Then the application will navigate to the Profile View for the author
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Given the user is not the author of the post
+Then a button to like the post should display
+When the user clicks the like button
+Then the like relationship will save to the database and the application will navigate to the Favorites view
 
-## Learn More
+Given the user is the author of the post
+Then a button to edit the post should display
+When the user clicks the edit button
+Then the application will navigate to the Edit Post view for the post
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🖥 Edit Post
+A view to edit a post
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Given the user wishes to edit their post
+When the user clicks to edit a post
+Then a form to edit will display, populated with the current values for the post
 
-### Code Splitting
+Given the user wishes to save their changes
+When the user clicks on the save button
+Then the post will be updated in the database and the application will navigate to the My Posts view
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🖥 My Posts
+A view for all the posts the user has written
 
-### Analyzing the Bundle Size
+Given the user wishes to view a list of posts they have written
+When the user visits the My Posts view
+Then the title will display for each post the user has written. A button to delete will display next to each post.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Given the user wishes to view their post
+When the user clicks on the title of the post
+Then the application will navigate to the Post Details view for the post
 
-### Making a Progressive Web App
+Given the user wishes to delete their post
+When the user clicks on the delete button
+Then the post will be deleted from the database and no longer display on the page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🖥 Favorites
+A view for all the posts the user has liked
 
-### Advanced Configuration
+Given the user wishes to view a list of the posts they have liked
+When the user visits the Favorites view
+Then the title will display for each post the user has liked. A button to remove to post from their favorites will display next to each post
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Given the user wishes to view one of their favorite posts
+When the user clicks on the title of the post
+Then the application will navigate to the Post Details view for the post
 
-### Deployment
+Given the user wishes to unlike a post
+When the user clicks on the remove button
+Then the like relationship will be deleted from the database and no longer display on the page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🖥 User Profile
+A view for the details of a user
 
-### `npm run build` fails to minify
+Given the user wishes to view either their profile or another user's profile
+When the user visits the User Profile view
+Then the full name, cohort number, number of posts written will display for the selected user
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Given the user is viewing their profile
+Then a button to edit should display
+When the user clicks the edit button
+Then the application will navigate to the Edit Profile view
+
+🖥 Edit Profile
+A form for the user to edit their profile
+
+Given the user wishes to edit their profile
+When the user visits the Edit Profile view
+Then a form will display to edit the user's full name and cohort number
+
+Given the user wishes to save their changes
+When the user clicks the save button
+Then the user will be updated in the database and the application will navigate to the User Profile view for the logged in user

@@ -1,0 +1,217 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "cohort": 32,
+            "email": "user1@example.com",
+            "fullName": "Alice Johnson"
+        },
+        {
+            "id": 2,
+            "cohort": 17,
+            "email": "user2@example.com",
+            "fullName": "Bob Smith"
+        },
+        {
+            "id": 3,
+            "cohort": 45,
+            "email": "user3@example.com",
+            "fullName": "Charlie Brown"
+        },
+        {
+            "id": 4,
+            "cohort": 12,
+            "email": "user4@example.com",
+            "fullName": "Diana Miller"
+        },
+        {
+            "id": 5,
+            "cohort": 58,
+            "email": "user5@example.com",
+            "fullName": "Eva Martinez"
+        },
+        {
+            "id": 6,
+            "cohort": 21,
+            "email": "user6@example.com",
+            "fullName": "Frank Johnson"
+        },
+        {
+            "id": 7,
+            "cohort": 39,
+            "email": "user7@example.com",
+            "fullName": "Grace White"
+        },
+        {
+            "id": 8,
+            "cohort": 9,
+            "email": "user8@example.com",
+            "fullName": "Harry Lee"
+        },
+        {
+            "id": 9,
+            "cohort": 53,
+            "email": "user9@example.com",
+            "fullName": "Irene Adams"
+        },
+        {
+            "id": 10,
+            "cohort": 27,
+            "email": "user10@example.com",
+            "fullName": "Jackie Robinson"
+        }
+    ],
+    "topics": [
+        {
+            "id": 1,
+            "name": "Artificial Intelligence"
+        },
+        {
+            "id": 2,
+            "name": "Blockchain Technology"
+        },
+        {
+            "id": 3,
+            "name": "Cybersecurity"
+        },
+        {
+            "id": 4,
+            "name": "Data Science"
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "body": "Exciting developments in Artificial Intelligence today!",
+            "date": "08/15/2023",
+            "title": "AI Advancements",
+            "topicId": 1,
+            "userId": 1
+        },
+        {
+            "id": 2,
+            "body": "Exploring the world of Blockchain and its potential applications.",
+            "date": "07/20/2023",
+            "title": "Blockchain Explained",
+            "topicId": 2,
+            "userId": 2
+        },
+        {
+            "id": 3,
+            "body": "Tips for enhancing your cybersecurity measures.",
+            "date": "06/10/2023",
+            "title": "Cybersecurity Tips",
+            "topicId": 3,
+            "userId": 3
+        },
+        {
+            "id": 4,
+            "body": "Latest trends and tools in the field of Data Science.",
+            "date": "05/05/2023",
+            "title": "Data Science Trends",
+            "topicId": 4,
+            "userId": 4
+        },
+        {
+            "id": 5,
+            "body": "How AI is reshaping healthcare services.",
+            "date": "04/18/2023",
+            "title": "AI in Healthcare",
+            "topicId": 1,
+            "userId": 5
+        },
+        {
+            "id": 6,
+            "body": "The future of finance: Decentralized Finance (DeFi).",
+            "date": "03/22/2023",
+            "title": "Decentralized Finance",
+            "topicId": 2,
+            "userId": 6
+        },
+        {
+            "id": 7,
+            "body": "Analyzing big data for business insights.",
+            "date": "02/09/2023",
+            "title": "Big Data Analytics",
+            "topicId": 4,
+            "userId": 7
+        }
+    ],
+    "likes": [
+        {
+            "id": 1,
+            "postId": 1,
+            "userId": 1
+        },
+        {
+            "id": 2,
+            "postId": 2,
+            "userId": 2
+        },
+        {
+            "id": 3,
+            "postId": 3,
+            "userId": 3
+        },
+        {
+            "id": 4,
+            "postId": 4,
+            "userId": 4
+        },
+        {
+            "id": 5,
+            "postId": 5,
+            "userId": 5
+        },
+        {
+            "id": 6,
+            "postId": 6,
+            "userId": 6
+        },
+        {
+            "id": 7,
+            "postId": 7,
+            "userId": 7
+        },
+        {
+            "id": 8,
+            "postId": 1,
+            "userId": 8
+        },
+        {
+            "id": 9,
+            "postId": 2,
+            "userId": 9
+        },
+        {
+            "id": 10,
+            "postId": 3,
+            "userId": 10
+        },
+        {
+            "id": 11,
+            "postId": 4,
+            "userId": 11
+        },
+        {
+            "id": 12,
+            "postId": 5,
+            "userId": 12
+        },
+        {
+            "id": 13,
+            "postId": 6,
+            "userId": 13
+        },
+        {
+            "id": 14,
+            "postId": 7,
+            "userId": 14
+        },
+        {
+            "id": 15,
+            "postId": 1,
+            "userId": 15
+        }
+    ]
+}
